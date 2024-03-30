@@ -1,0 +1,162 @@
+.footer{
+    background-color: #fff;
+    padding-top: 80px;
+    &_title{
+        @include big_text;
+        text-align: center;
+        color: $main_black
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    &_email{
+        display: flex;
+        max-width: 500px;
+        align-items: center;
+        margin-bottom: 80px;
+        input{
+            margin-right: 0;
+            padding-left: 15px;
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid $light_grey;
+            background-color: #fff;
+            &::placeholder{
+                color: $light_grey;
+                @include main_text;
+                text-align: left;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        &_button{
+            a{
+                color: #ffffff;
+                text-decoration: none;
+                margin-left: 0;
+            }
+            padding-top: 10px;
+            width: 119px;
+            @include button;
+            height: 30px;
+        }
+    }
+    .line{
+        display: flex;
+        height: 5px;
+        max-width: 1140px;
+        &_red{
+            background-color: #FF4F52;
+            width: 195px;
+            height: 5px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &_purple{
+            background-color:#AC8EE3;
+            width: 195px;
+            height: 5px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &_blue{
+            background-color: #4592FF;
+            width: 195px;
+            height: 5px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &_orange{
+            background-color: #FFA34D;
+            width: 195px;
+            height: 5px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &_green{
+            background-color: #3DC47E;
+            width: 195px;
+            height: 5px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &_cian{
+            background-color: #6E99AE;
+            width: 195px;
+            height: 5px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &_links{
+        display: flex;
+        max-width: 1140px;
+        margin-top: 40px;
+        &_block{
+            &_title{
+                font-weight: bold;
+                @include main_text;
+                text-align: left;
+                color: $main_black
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            &_text{
+                color: #4B5157;
+                @include main_text;
+                text-align: left;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    &_logos{
+        border-top: 1px solid $light_grey;
+        border-bottom: 1px solid $light_grey;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        max-width: 1340px;
+        display: flex;
+        justify-content: space-between;
+        &_text{
+            display: flex;
+            align-items: center;
+            &_block{
+                text-transform: uppercase;
+                margin-left: 25px;
+                font-weight: bold;
+                @include main_text;
+                letter-spacing: 0.5px;
+                text-align: left;
+                color: $main_black
+            }
+        }
+        &_img{
+            display: flex;
+            img{
+                margin-left: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+    &_last{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        max-width: 1140px;
+        &_left{
+            color:  $main_grey;
+            @include main_text;
+            text-align: left;
+            max-width: 750px;
+        }
+        &_right{
+            color: $main_grey;
+            @include main_text;
+            text-align: right;
+        }
+    }
+}

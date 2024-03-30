@@ -1,0 +1,30 @@
+.flower{
+    background-image: url('images/flower.png');
+    height: 230px;
+    width: 1366px;
+    display: flexbox;
+    position: relative;
+    padding-top: 40px;
+    &_title{
+        color: #ffffff;
+        font-weight: bold;
+        @include big_text;
+        text-align: center;
+        max-width: 650px;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    button{
+        a{
+            color: #ffffff;
+            margin-right: -10px;
+            text-decoration: none;
+        }
+        display: flex;
+        align-items: center;
+        width: 138px;
+        height: 40px;
+        @include button;
+    }
+}

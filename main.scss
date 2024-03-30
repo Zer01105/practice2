@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin-right: auto;
+    margin-left: auto;;
+    font-family: "Lato", sans-serif;
+    color: #262D33;
+}
+body{
+    background-color: #edeff0;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+@import "..//2.2/add/mixin.scss";
+@import "..//2.2/add/header.scss";
+@import "..//2.2/add/first.scss";
+@import "..//2.2/add/second.scss";
+@import "..//2.2/add/flower.scss";
+@import "..//2.2/add/third.scss";
+@import "..//2.2/add/reader.scss";
+@import "..//2.2/add/footer.scss";
+
+
+
+
+
+

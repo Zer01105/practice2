@@ -1,0 +1,196 @@
+.third{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: start  ;
+}
+.news{
+    border-radius: 15px;
+    background-color: #fff;
+    max-width: 848px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.new{
+    .second_hand_text_add{
+        vertical-align: bottom;
+        display: flex;
+        align-items: flex-end;  
+        justify-content: start;
+    }
+    .second_hand_text_add_comm{
+        display: flex;
+        margin-right: 0;
+        margin-left: 0;
+        align-items: flex-end;
+        div{
+            color:  $main_grey;
+            margin-right: 0;
+        }
+        img{
+            opacity: 100%;
+            margin-right: 5px;
+            margin-bottom: 0;
+        }
+    }
+    .second_hand_text_add_date{
+        color: $main_grey;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    &:nth-child(2){
+        .new_text{
+            .new_text_pretitle{
+                color:   #3BBDC4;
+            }
+        }
+    }
+    &:nth-child(3){
+        .new_text{
+            .new_text_pretitle{
+                color:  #FF4F52;
+            }
+        }
+    }
+    &:nth-child(4){
+        .new_text{
+            .new_text_pretitle{
+                color:  #3BBDC4;
+            }
+        }
+    }
+    &:nth-child(5){
+        .new_text{
+            .new_text_pretitle{
+                color:  #FF4F52;
+            }
+        }
+    }
+    &:nth-child(5){
+        .new_text{
+            .new_text_pretitle{
+                color: #AC8EE3;
+            }
+        }
+    }
+    max-width: 848px;
+    max-height: 245px;
+    display: flex;
+    border-bottom: 1px solid ;
+    color: $light_grey;
+    justify-content: space-between; 
+    img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &_text{
+        max-width: 437px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &_title{
+            font-family: Roboto Slab;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: left;
+            font-weight: bold;
+            color: $main_black
+            margin-bottom: 20px;
+
+        }
+        &_main{
+            @include main_text;
+            text-align: left;
+            color: #4B5157;
+
+        }
+        &_pretitle{
+            margin-bottom: 20px;
+            @include small_text;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color:  #4592FF;
+            text-transform: uppercase;
+        }
+    }
+}
+.bookmark{
+    width: 20px;
+    height: 20px;
+}
+.recomended{
+    height: 770px;
+    margin-left: 40px;
+    margin-right: 0;
+    max-width: 263px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    padding-right: 40px;    
+    .link{
+        margin-top: 20px;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    a{
+    color: $main_black;
+    @include main_text;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    }
+    &_line{
+        margin-top: 15px;
+        max-width: 288px;
+        height: 1px;
+        background-color: $main_grey;
+        margin-left: -25px;
+    }
+    &_title{
+        max-width: 263px;
+        text-transform: uppercase;
+        font-weight: bold;
+        @include main_text;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+    &_block{
+        border-bottom: 1px solid $main_grey;
+        padding-bottom: 20px;
+        margin-left: 0;
+        img{
+            width: 60px;
+            height: 60px;
+            margin-right: 5px;
+            margin-left: 0;
+        }
+        margin-top: 20px;
+        max-width: 213px;
+        display: flex;
+
+        &_text{
+            max-width: 143px;
+            margin-left: 5px;
+            &_main{
+                color: #4B5157;
+                @include main_text;
+                text-align: left;
+            }
+            &_date{
+                color: $main_grey;
+                @include small_text;
+                text-align: left;
+            }
+        }
+        .number{
+            width: 41px;
+            height: 50px;
+            margin-left: -95px;
+        }
+    }
+}

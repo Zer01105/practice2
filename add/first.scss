@@ -1,0 +1,246 @@
+.first{
+    background-color: $main_black
+    max-width: 1600px;
+    height: 475px;
+    position: relative;
+    &_news{
+        height: 130px;
+        max-width: 1200px;
+        background-color:#30363D;
+        display: flex;
+        border-radius: 15px;
+        .new{
+            border-bottom: none;
+            margin-top: 30px;
+            display: flex;
+            width: 250px;
+            border-right: 1px solid #6d6d6d;
+            height: 75px;
+            img{
+                margin-top: 0;
+                height: 65px;
+                width: 65px;
+                margin-right: 25px;
+                margin-bottom: 0;
+            }
+
+            .text{
+                margin-top: 0;
+                max-height: 65px;
+                a{
+                    font-family: Roboto Slab;
+                    font-size: 16px;
+                    line-height: 25px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+nav{
+    max-width: 1200px;
+    ol{
+        margin-top: 0;
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        li{
+            margin-top: 15px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+    }
+}
+.background{
+    background-image: url("images/back.png");
+    width: 1140px;
+    height: 570px;
+    border-radius: 15px;
+    margin-top: 35px;
+    position: relative;
+    &_left{
+        position: absolute;
+        top: 40px;
+        margin-left: 60px;
+    }
+    &_author{
+        margin-left: 0;
+        display: flex;
+        max-width: 210px;
+        justify-content: start;
+        img{
+            width: 45px;
+            height: 45px;
+        }
+        .text{
+            margin-top: 5px;
+            .title{
+                font-size: 14px;
+                line-height: 20px;
+                text-align: left;
+                color: #ffffff;
+            }
+            .under_title{
+                @include small_text;
+                text-align: left;
+                color: #ffffff;
+                opacity: 30%;
+            }
+        }
+    }
+    &_text{
+        margin-top: 170px;
+        .pretitle{
+            @include small_text;
+            letter-spacing: 0.5px;
+            text-align: left;
+            text-transform: uppercase;
+            color: #4592FF;
+        }
+        .title{
+            @include big_text;
+            text-align: left;
+            color: #ffffff;
+            max-width: 600px;
+            margin-top: 25px;
+        }
+        
+    }
+    &_right{
+        height: 570px;
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        max-width: 263px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+        .recomended{
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: $main_black
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #a8a8a8;
+            height: 40px;
+            border-radius: 0px;
+            vertical-align: middle;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+            padding-right: 0px;  
+            margin-left: 0; 
+        }
+        .elements{
+            .element{
+                margin-left: 25px;
+                height: 100px;
+                width: 263px;
+                &_title{
+                    @include small_text;
+                    letter-spacing: 0.5px;
+                    text-align: left;
+                    color: #3BBDC4;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                .line{
+                    background-color: #6d6d6d;
+                    height: 1px;
+                    width: 263px;
+                    margin-top: 16px;
+                    position: absolute;
+                    left: 0;
+                }
+                &_text{
+                    color:#4B5157;
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-align: left;
+                    margin-left: 0;
+                    max-width: 213px;
+                }
+                &:nth-child(2){
+                    .element_title{
+                        color: #6E99AE;
+                    }
+                }
+                &:nth-child(3){
+                    .element_title{
+                        color: #AC8EE3;
+                    }
+                }
+                &:nth-child(4){
+                    .element_title{
+                        color: #FFA34D;
+                    }
+                }
+                &:nth-child(5){
+                    margin-top: -5px;
+                    .element_title{
+                        color: #3DC47E;
+                    }
+                }
+            }
+        }
+    }
+}
+.interactive{
+    margin-top: 55px;
+    display: flex;
+    button{
+        a{
+            color: #ffffff;
+            margin-right: -10px;
+            text-decoration: none;
+        }
+        display: flex;
+        align-items: center;
+        width: 138px;
+        height: 40px;
+        @include button;
+        margin-left: 0;
+    }
+    .player{
+        margin-left: -20px;
+        display: flex;
+        align-items: center;
+        margin-top: -10px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        .text{
+            
+            margin-left: 15px;
+            .title{
+                margin-top: 0;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: left;
+                color: #ffffff;
+            }
+            .under_title{
+                @include small_text;
+                text-align: left;
+                color: #ffffff;
+                opacity: 50%;
+            }
+        }
+    }
+}

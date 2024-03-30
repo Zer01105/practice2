@@ -1,0 +1,26 @@
+$main_grey:#939699;
+$main_black:#262D33;
+$light_grey:#D9DADB;
+
+@mixin main_text{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+}
+@mixin button{
+    cursor: pointer;
+    text-align: center;
+    background-color: #4592FF;
+    border-radius: 25px;
+    border: none;
+}
+@mixin big_text{
+    font-family: Roboto Slab;
+    font-size: 40px;
+    line-height: 50px;
+}
+@mixin small_text{
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 15px;
+}
